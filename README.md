@@ -5,9 +5,17 @@ Using the browser console, attach an event listener of any type to [this page](h
 ```js
 const mango = document.querySelector('#mangue');
 mango.addEventListener('click', function (event) {
-  mango.style.animation = 'spin'
+  mango.style.animation = ''
   mango.style.animationDuration = '0.5s'
   mango.style.animationIterationCount = 'infinite'
   mango.style.animationTimingFunction = 'linear'
 })
 ```
+Updated code:
+
+const mango = document.querySelector('#mangue');
+
+mango.addEventListener('mouseover', function(event) {
+    console.log("Welcome to the Mango!")
+
+})
